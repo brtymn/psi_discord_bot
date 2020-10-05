@@ -37,6 +37,12 @@ client.on("message", function(message){
     const sum = numArgs.reduce((counter, x) => counter += x);
     message.reply(`The sum of all the arguments you provided is ${sum}!`);
   }
+  else if (command === "psi_personal_assistant"){
+    message.reply("You can find psi here: https://github.com/brtymn/psi_personal_assistant");
+  }
+  else if (command === "thanks"){
+    message.reply("You are welcome!")
+  }
   else{
     message.reply("I don't understand.")
   }
